@@ -1,7 +1,17 @@
-##### THIS IS MY HEADER
+# Consensys Final Project suggestions
 
 
 
-## this is a h2 tag
+##### Decentralized Exchange
 
-# this is a h1 tag
+##### NFT Marketplace
+
+##### Staking Platform
+
+##### Payment system (employer <-> empoyee)
+
+##### Stable coin
+
+##### Derivative Platform
+
+##### Oracle
