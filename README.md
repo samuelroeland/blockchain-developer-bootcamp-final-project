@@ -1,37 +1,37 @@
 # Consensys Final Project suggestions
 
 
-##### Decentralized Exchange
--Uniswap
+## Decentralized Exchange
+- Uniswap
 
 
 
-##### NFT Marketplace
--OpenSea
+## NFT Marketplace
+- OpenSea
 
 
 
-##### Staking Platform
--Maker
+## Staking Platform
+- Maker
 
 
 
-##### Payment system (employer <-> empoyee)
-
-
-
-
-##### Stable coin
+## Payment system (employer <-> empoyee)
 
 
 
 
-##### Derivative Platform
--Synthetix
+## Stable coin
 
 
 
-##### Oracle
+
+## Derivative Platform
+- Synthetix
+
+
+
+## Oracle
 - ChainLink
 
 
