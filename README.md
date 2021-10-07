@@ -1,18 +1,4 @@
-# Consensys Final Project suggestions
-
-## Decentralized Exchange
-
-- Uniswap
-
-## NFT Marketplace
-
-- OpenSea
-
-## Staking Platform
-
-- Maker
-
-## Payment system (employer <-> empoyee)
+# Consensys Final Project
 
 ## Decentralized Marketplace
 
@@ -37,6 +23,12 @@
   }
 
 #### Enums
+
+- productStatus{Available, Sold, Shipped, Received}
+
+#### Events
+
+-
 
 ## NFT Social Media Platform
 
