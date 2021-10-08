@@ -52,7 +52,7 @@ contract CrowdFunding {
       */
       mapping(uint => Item) public items; 
       mapping(uint => address) public sellors;
-      mapping(uint=> address) public buyers; 
+      mapping(uint => address) public buyers; 
 
 
 
