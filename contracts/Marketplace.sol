@@ -1,8 +1,8 @@
-// SPDX-License-Identifier: MIT
-pragma solidity >=0.5.16 <0.9.0;
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.6.0 <0.9.0;
 
+contract CrowdFunding {
 
-contract Marketplace {
 
     /* 
      * State Variables 
@@ -25,16 +25,16 @@ contract Marketplace {
         string name;
         uint sku;
         uint price;
-        ProductState state
-        address payable seller;
-        address payable buyer; 
+        ProductState state;
     }
     
+    
+
 
     /* 
      * Events
      */
-
+    event LogItemBought(uint sku, address buyer, address _from)
 
 
     /* 
@@ -50,7 +50,9 @@ contract Marketplace {
      /* 
       * Mappings
       */
-      mapping(uint => Item) items; 
+      mapping(uint => Item) public items; 
+      mapping(uint => address) public sellors;
+      mapping(uint=> address) public buyers; 
 
 
 
@@ -66,11 +68,25 @@ contract Marketplace {
      /* 
       * Functions
       */
-
-    function listItem(string _name, uint _price) public  {
-        items[skuCount] = Item(_name, skuCount, _price, msg.sender, address(0)); 
+    
+    
+    function listItem(string memory _name, uint _price) public returns(bool) {
+        items[skuCount] = Item(_name, skuCount, _price, ProductState.Available);
+        sellors[skuCount] = msg.sender; 
+        skuCount ++; 
+        delete items[skuCount]; 
     }
+    
+    function buyItem(uint sku) public payable{
 
+        require(msg.value >= items[skuCount].price , "You did not send enough funds to buy this product");
+        buyers[skuCount] = msg.sender; // 
+        emit LogItemBought(skuCount, msg.sender, sellors[skuCount]); 
+        
+        
+        
+        
+    }
 
 
 }
