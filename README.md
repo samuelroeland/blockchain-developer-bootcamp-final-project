@@ -8,27 +8,34 @@
 
 ### Basic Functionality:
 
-#### Functions
+#### Enums
 
-- function listItem(address seller)
+- productState{Available, Sold, Shipped, Received}
 
 #### Structs
 
 - struct Item{
   string name,
-  uint itemId,
+  uint sku,
   uint price,
-  uint seller,
-  uint buyer (initial address(0))
+  ProductState state
+  address payable seller,
+  address payable buyer (initial address(0))
   }
-
-#### Enums
-
-- productStatus{Available, Sold, Shipped, Received}
 
 #### Events
 
--
+#### Modifiers
+
+#### Mappings
+
+- mapping(uint => Item) items;
+
+#### Functions
+
+x function listItem()
+
+x buyItem()
 
 ## NFT Social Media Platform
 
