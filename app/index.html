@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<h1>Decentralized Marketplace</h1>
+
+		<!-- 1. Detect if MetaMask is installed -->
+		<div id="mm-detected"></div>
+
+		<!-- 2. Allow user to get acces to MetaMask -->
+		<button id="mm-connect">Connect To MetaMask</button>
+		<div id="mm-current-account"></div>
+
+		<script src="dapp.js"></script>
+
+		<div id="listItem">
+			<h3>List Item</h3>
+			<ol>
+				<li>
+					<input
+						id="inputItemName"
+						type="text"
+						placeholder="Enter Name of Product"
+					/>
+				</li>
+				<li>
+					<input
+						id="inputItemPrice"
+						type="number"
+						placeholder="Price of your product"
+					/>
+				</li>
+			</ol>
+
+			<button id="btnUploadItem">Upload your item</button>
+		</div>
+	</body>
+</html>
